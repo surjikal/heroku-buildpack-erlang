@@ -48,6 +48,7 @@ cd $build
 
 if [ ! -e "rebar" ]; then
   echo "-----> Installing Rebar from buildpack"
+  ./rebar --version 
   cp ${bpdir}/opt/rebar ./
 fi
 
